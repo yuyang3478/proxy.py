@@ -39,3 +39,6 @@ optional arguments:
 Having difficulty using proxy.py? Report at:
 https://github.com/abhinavsingh/proxy.py/issues/new
 ```
+run proxy.py on proxy server
+
+run request_http_throgh_proxy.py on client
