@@ -507,7 +507,7 @@ class Proxy(multiprocessing.Process):
 class TCP(object):
     """TCP server implementation."""
     
-    def __init__(self, hostname='127.0.0.1', port=8899, backlog=100):
+    def __init__(self, hostname='', port=8899, backlog=100):
         self.hostname = hostname
         self.port = port
         self.backlog = backlog
@@ -551,7 +551,7 @@ def main():
         epilog='Having difficulty using proxy.py? Report at: %s/issues/new' % __homepage__
     )
     
-    parser.add_argument('--hostname', default='127.0.0.1', help='Default: 127.0.0.1')
+    parser.add_argument('--hostname', default='', help='Default: ')
     parser.add_argument('--port', default='8899', help='Default: 8899')
     parser.add_argument('--log-level', default='INFO', help='DEBUG, INFO, WARNING, ERROR, CRITICAL')
     args = parser.parse_args()
